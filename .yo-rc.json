@@ -1,0 +1,13 @@
+{
+  "generator-ndx": {
+    "filters": {
+      "appType": "cli",
+      "client": true,
+      "description": "modal windows for ndx-framework",
+      "appName": "ndx-modal",
+      "gitname": "ndxbxrme",
+      "gitemail": "lewis_the_cat@hotmail.com"
+    },
+    "appname": "github"
+  }
+}

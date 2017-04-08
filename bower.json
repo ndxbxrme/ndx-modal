@@ -1,0 +1,17 @@
+{
+  "name": "ndx-modal",
+  "description": "modal windows for ndx-framework",
+  "main": ["build/index.js", "build/app.css"],
+  "authors": [
+    "ndxbxrme"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ndxbxrme/ndx-modal",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

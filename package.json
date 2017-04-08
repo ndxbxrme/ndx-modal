@@ -1,0 +1,28 @@
+{
+  "name": "ndx-modal",
+  "version": "0.0.1",
+  "description": "modal windows for ndx-framework",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "node build/test.js"
+  },
+  "ndx": true,
+  "loadOrder": 5,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndxbxrme/ndx-modal"
+  },
+  "author": "ndxbxrme",
+  "license": "MIT",
+  "homepage": "https://github.com/ndxbxrme/ndx-modal",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
