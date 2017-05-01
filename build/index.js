@@ -401,6 +401,27 @@
     $templateCache.put('template/modal/backdrop.html', '<div class="reveal-modal-bg fade" ng-class="{in: animate}" ng-click="close($event)" style="display: block"></div>\n' + '');
   }).run(function($templateCache) {
     $templateCache.put('template/modal/window.html', '<div tabindex="-1" class="reveal-modal fade {{ windowClass }}"\n' + '  ng-class="{in: animate}" ng-click="close($event)"\n' + '  style="display: block; position: fixed; visibility: visible">\n' + '  <div ng-transclude></div>\n' + '</div>\n' + '');
+  }).run(function($rootScope, ndxModal) {
+    var root;
+    root = Object.getPrototypeOf($rootScope);
+    return root.modal = function(args) {
+      var backdrop, controller, modalInstance, size;
+      size = args.size || 'large';
+      controller = args.controller || 'YesNoCancelCtrl';
+      backdrop = args.backdrop || 'static';
+      modalInstance = ndxModal.open({
+        templateUrl: "modals/" + args.template + "/" + args.template + ".html",
+        windowClass: size,
+        controller: controller,
+        backdrop: backdrop,
+        resolve: {
+          data: function() {
+            return args.data;
+          }
+        }
+      });
+      return modalInstance.result;
+    };
   });
 
 }).call(this);
