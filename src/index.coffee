@@ -360,7 +360,6 @@ module.factory '$transition', ($q, $timeout, $rootScope) ->
       $modal
   $modalProvider
 .run ($templateCache) ->
-  console.log 'putting'
   $templateCache.put 'template/modal/backdrop.html', '<div class="reveal-modal-bg fade" ng-class="{in: animate}" ng-click="close($event)" style="display: block"></div>\n' + ''
   return
 .run ($templateCache) ->
